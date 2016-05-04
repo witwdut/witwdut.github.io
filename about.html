@@ -34,9 +34,8 @@
                    position: relative;
                    font-size:1.5em;}
             .search {float: left;
-                     position: absolute;
-                                                                   }
-            
+                     position: absolute;}
+                                                                  
     </style>
     <!-- search bar -->
     <script>
@@ -90,68 +89,52 @@
                         </li>
                 </ul>
             </div>
-            <!-- This is the example for making the navbar's dropdown
-
-navbar collapse 
-            <nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="#">WebSiteName</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Page 1-1</a></li>
-          <li><a href="#">Page 1-2</a></li>
-          <li><a href="#">Page 1-3</a></li>
-        </ul>
-      </li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
-    </ul>
-  </div> -->
+        
 </nav>
-            <!-- navbar collapse -->
+  
+ <div class="container">
+  <div class="row">
+    <div class="col-md-4" "colone">
+  <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">I'm from here</button>
 
-        <div class="row">
-            <div class="jumbotron">
-                <h1>My first bootstrap page</h1>
-                <h3>D'Agostino's</h3>
-                <button type="button" class="btn btn-success btn-lg">
-                    <span class="glyphicon glyphicon-repeat"></span> Contras-clockwise
-                </button>
-            </div>
-        </div>
+        <!-- simple modal -->
         
-            </div>
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <img class="responsive" src="images/philadelphia-park.jpg" width="100%" height="100%">
+            </div></div>
         </div>
+        <div class="col-md-4" "coltwo">
+           <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal2">I went here</button>
+
+        <!-- simple modal -->
         
+        <div class="modal fade" id="myModal2" role="dialog">
+            <div class="modal-dialog">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <img class="responsive" src="images/pitt.jpg" width="100%" height="100%">
+            </div></div>
+        </div>
+        <div class="col-md-4" "colthree">
+  <h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal3">I live here</button>
+
+        <!-- simple modal -->
+        
+        <div class="modal fade" id="myModal3" role="dialog">
+            <div class="modal-dialog">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <img class="responsive" src="images/taxi-nyc.jpg" width="100%" height="100%">
+            </div></div>
+        </div>
+        </div></div>
        
-<!--  
-    <!-- modalOne begins here -->
-    <!-- "id" tells which modal it's for -->
-    
-     <div class="modal fade" id="modalOne" role="dialog">
-
-        <!-- Bootstrap's way of saying there's gonna be content, in this case, modal -->
-        <div class="modal-dialog">
-            <!-- modal header and content not necessary -->
-            <div class="modal-content">
-
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;
-
-                    </button>
-                    <!-- creates modal title...obvs -->
-                    <h5 class="modal-title">Texty and testy</h5>
-                </div>
-                <!-- closes modal header -->
-                <div class="modal-body"> <img src="images/goldensquirrels.jpg" width="100%" height="100%" />
-                </div>
-            </div>
-        </div>
-    </div> 
     
       <!-- Fixed navbar -->
         <footer class="footer">
