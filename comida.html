@@ -51,7 +51,21 @@
           .gallery ul{display:inline;
                       margin-right:3px;}
           .switch{opacity:1;}
-          .container{margin-top:2%;} 
+          .container{margin-top:2%;}
+           .banners {
+            margin: 0 auto;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            margin-right: 10px;
+            float: left;
+            }
+            .banners img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            }
                     
 </style>
 <script>
@@ -69,7 +83,40 @@
           }); 
     });
 </script>
-        <title>'Twerking' Title</title>
+<script>
+    /*global $*/$(document).ready(function() {
+	
+	var sage_intId;
+	var $sage_banners 	= $('.banners');
+	var sage_timeout 	= 106000;
+	
+	$sage_banners.find('img:gt(0)').hide();
+
+	function sage_imageRotation() 
+	{
+		var $current = $sage_banners.find('img:visible');
+		var $next = $current.next();
+		
+		if ($next.length == 0) 
+		{
+			$next = $sage_banners.find('img:eq(0)');
+		}
+		
+		$current.fadeOut();
+		$next.fadeIn();
+	}
+	
+	sage_intId = setInterval(function() {
+		sage_imageRotation();
+	}, 400);
+	
+	setTimeout(function(){
+		clearInterval(sage_intId);
+	}, sage_timeout);
+
+});
+</script>
+        <title>Vittles</title>
     </head>
 
     <body>
@@ -133,6 +180,15 @@
                         <li><img class="responsive" src="images/oat_berry.jpg" /></li>
                     </ul>
                 </div>
+                <br>
+                <div class="container">
+                <p>On the other hand--or plate, as the case may be--there's always sriracha</p><div class="banners">
+                    <img class="responsive" src="images/sriracha1.png" height="100px" width="100px" alt="up" />
+                    <img class="responsive" src="images/sriracha2.png" height="100px" width="100px" alt="lilright" />
+                    <img class="responsive" src="images/sriracha3.png" height="100px" width="100px" alt="lilleft" />
+                    <img class="responsive" src="images/sriracha4.png" height="100px" width="100px" alt="right" />
+                    <img class="responsive" src="images/sriracha6.png" height="100px" width="100px" alt="left" />
+              </div></div>
             
             </div></div></div><!-- /.blog-main -->
             
