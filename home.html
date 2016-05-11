@@ -19,8 +19,45 @@
         </style> -->
         <title>'Twerking' Title</title>
         <style>
-          .footer img {display: inline-block;}
-            .widgets {float:left;}
+          /*  .footer img {display: inline-block;}
+            .widgets {float:left;}*/
+            @media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+ .inner img {display: inline-block;}
+            .copy {float: right;}
+           /* {display: inline-block;}
+           .inner img {float:left;}*/
+            .word {float: right;
+                   position: relative;
+                   font-size:1.5em;}
+
         </style>
     </head>
 
@@ -112,7 +149,7 @@ navbar collapse
               <a href="home.html"><img class="img-responsive" src="images/fro_words.jpg" alt="FroWords"></a>
               <div class="carousel-caption">
                 <h1>Home(boy)</h1>
-                <p>The blogger's stand-in in two-dimensions</p>
+                <p>A directory, of sorts</p>
                   </div>
                 </div>
 
@@ -120,7 +157,7 @@ navbar collapse
               <a href="about.html"><img class="img-responsive" src="images/comcast-tower-aeriel.jpg" alt="ComcastTower"></a>
                   <div class="carousel-caption">
                 <h1>Raison d'etre</h1>
-                <p>Giant jump drive</p>
+                <p>The essence of (this site's) existence</p>
                   </div>
                 </div>
                 
@@ -128,22 +165,22 @@ navbar collapse
               <a href="hairfood.html"><img class="img-responsive" src="images/hair_flower.jpg" alt="flor Y morena como yo"></a>
                   <div class="carousel-caption">
                 <h1>FTFY</h1>
-                <p>Fix That Fro, You!</p>
+                <p>Fix That Fro, Yo! *and other pertinent hair info*</p>
                   </div>
                 </div>
 
             <div class="item">
               <a href="comida.html"><img class="img-responsive" src="images/blueberries-oats.jpg" alt="MealofOat"></a>
                   <div class="carousel-caption">
-                    <h3>"Lifestyle" - Rich Gang ft. Young Thug & Rich Homie Quan</h3>
-                    <p>meal of oat YAASSS!</p>
+                    <h1>Food Revelation 3:17</h1>
+                    <p>meal of oat YAASSS!!!</p>
                   </div>
                 </div>
                 
                 <div class="item">
               <a href="ejercicio.html"><img class="img-responsive" src="images/frogs-yoga.jpg" alt="Frogis"></a>
                   <div class="carousel-caption">
-                    <h3>Third eye stuntin'</h3>
+                    <h1>The Ultimate Lifestyle Guide</h1>
                     <p>namast'ay in bed...</p>
                   </div>
                 </div>
@@ -177,6 +214,17 @@ navbar collapse
             
          </div>
         </div>
+        
+        <footer class="footer">
+    
+            <div class="inner">
+            
+            <center><a href="https://www.facebook.com/"><img class="img-responsive" "#face" src="http://static.naturallycurly.com/images/curlynikki/facebook.png" /></a>
+            <a href="http://www.twitter.com/"><img class="img-responsive" src="http://static.naturallycurly.com/images/curlynikki/twitter.png" /></a>
+            <a href="http://www.instagram.com/"><img class="img-responsive" src="http://static.naturallycurly.com/images/curlynikki/instagram.png" /></a>
+            <a href="https://mail.google.com/"><img class="img-responsive" src="http://static.naturallycurly.com/images/curlynikki/cn-email-button.png" /></a>
+            </p><p>Read more elsewhere!</p></center></div>
+          </footer> 
       <!--   <div class="mastfoot">
     
             <div class="widgets">

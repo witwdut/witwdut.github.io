@@ -21,7 +21,7 @@
         }
         </style> -->
          <style>
-            .footer {/*float: left;*/
+         /*   .footer {/*float: left;
                      bottom: 0;
                      width: 100%;
                      height: auto;
@@ -30,13 +30,50 @@
             }
             .footer img {display: inline-block;}
             .copy {float: right;}
-                   /*display: inline-block;}*/
+                   display: inline-block;}
             .widgets {float:left;}
             .word {float: right;
                    position: relative;
                    font-size:1.5em;}
             .search {float: left;
-                     position: absolute;}
+                     position: absolute;}*/
+                      @media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+ .inner img {display: inline-block;}
+            .copy {float: right;}
+           /* {display: inline-block;}
+           .inner img {float:left;}*/
+            .word {float: right;
+                   position: relative;
+                   font-size:1.5em;}
+
            
             h5 img {height: 20%;
                     width: 20%;}
@@ -182,7 +219,7 @@
                 </div>
                 <br>
                 <div class="container">
-                <p>On the other hand--or plate, as the case may be--there's always sriracha</p><div class="banners">
+                <h4>On the other hand--or plate, as the case may be--there's always sriracha</h4><div class="banners">
                     <img class="responsive" src="images/sriracha1.png" height="100px" width="100px" alt="up" />
                     <img class="responsive" src="images/sriracha2.png" height="100px" width="100px" alt="lilright" />
                     <img class="responsive" src="images/sriracha3.png" height="100px" width="100px" alt="lilleft" />
@@ -241,19 +278,18 @@
             </ul>
           </nav>
 
-        
+        <br>
         <!-- Fixed navbar -->
         <footer class="footer">
-            <div class="container">
-                <center>
-                    <p>
-            <a href="https://www.facebook.com/"><img class="img-responsive" src="http://static.naturallycurly.com/images/curlynikki/facebook.png" /></a>
+    
+            <div class="inner">
+            
+            <center><a href="https://www.facebook.com/"><img class="img-responsive" "#face" src="http://static.naturallycurly.com/images/curlynikki/facebook.png" /></a>
             <a href="http://www.twitter.com/"><img class="img-responsive" src="http://static.naturallycurly.com/images/curlynikki/twitter.png" /></a>
             <a href="http://www.instagram.com/"><img class="img-responsive" src="http://static.naturallycurly.com/images/curlynikki/instagram.png" /></a>
             <a href="https://mail.google.com/"><img class="img-responsive" src="http://static.naturallycurly.com/images/curlynikki/cn-email-button.png" /></a>
-            </p><p>Read more elsewhere!</p></center>
-                </div>
-        </footer>
+            </p><p>Read more elsewhere!</p></center></div>
+          </footer> 
         <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->

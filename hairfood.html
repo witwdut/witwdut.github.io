@@ -14,7 +14,7 @@
         
          <!-- footer -->
        <style>
-            .footer {/*float: left;*/
+          /*  .footer {float: left;
                      bottom: 0;
                      width: 100%;
                      height: auto;
@@ -24,7 +24,7 @@
             .footer img {display: inline-block;}
             .copy {float: right;}
                    /*display: inline-block;}*/
-            /*.widgets {float:left;}*/
+            /*.widgets {float:left;}
             .word {float: right;
                    position: relative;
                    font-size:1.5em;}
@@ -44,7 +44,44 @@
                     }
             .meow {display: inline-block;}
             space {word-spacing: 50px;} 
-            .container{margin-top:2%;}
+            .container{margin-top:2%;}*/
+             @media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+ .inner img {display: inline-block;}
+            .copy {float: right;}
+           /* {display: inline-block;}
+           .inner img {float:left;}*/
+            .word {float: right;
+                   position: relative;
+                   font-size:1.5em;}
+
             
              #div {
     background-image: url("images/agua.jpg");
@@ -230,9 +267,20 @@
 
         
         
-        
+        <br>
           <!-- Fixed navbar -->
-     <footer class="footer">
+          <footer class="footer">
+    
+            <div class="inner">
+            
+            <center><a href="https://www.facebook.com/"><img class="img-responsive" "#face" src="http://static.naturallycurly.com/images/curlynikki/facebook.png" /></a>
+            <a href="http://www.twitter.com/"><img class="img-responsive" src="http://static.naturallycurly.com/images/curlynikki/twitter.png" /></a>
+            <a href="http://www.instagram.com/"><img class="img-responsive" src="http://static.naturallycurly.com/images/curlynikki/instagram.png" /></a>
+            <a href="https://mail.google.com/"><img class="img-responsive" src="http://static.naturallycurly.com/images/curlynikki/cn-email-button.png" /></a>
+            </p><p>Read more elsewhere!</p></center></div>
+          </footer> 
+          
+   <!-- ugh  <footer class="footer">
             <div class="container">
                 <center>
                     <div class="widgets">
@@ -251,7 +299,7 @@
                     <a href="index.html"><span class="glyphicon glyphicon-search"></span></a> Search
                     </button>
                          </p> </div>-->
-             <div class ="search">
+           <!--  <div class ="search">
                     <input type="search" id="mySearch" placeholder="If only this were functional...">
                     <button onclick="myFunction()">Search</button><p id="demo"></p>
                 </div>
